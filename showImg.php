@@ -1,7 +1,7 @@
 <?
 
 $id = $_GET["id"];
-$image_path="./photo/".$id;
+$image_path="./photo/".$id.".jpg";
 //echo $image_path;
 $openfile = fopen($image_path, 'r');
 $forasp_cn = fread($openfile, filesize($image_path));
