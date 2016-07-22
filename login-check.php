@@ -7,7 +7,7 @@ $PassWord = $_POST["PassWord"];
 $tableName = "adminuser";
 $rowNum = 5;
 $sqlCode = "SELECT No, pri FROM ".$tableName." WHERE Name='".$Name."' and PassWord='".$PassWord."'";
-//echo $sqlCode;
+echo $sqlCode;
 
 $result = mysql_query($sqlCode); 
 $row = mysql_fetch_assoc($result);
@@ -28,7 +28,7 @@ else
 	$_SESSION["pri"]=$row["pri"];
 	session_write_close();
 
-	$url = "a_AdminUser?WebNo=1";
+	$url = "a_AdminUser.php?WebNo=1";
 	echo "<script type='text/javascript'>";
 	echo "window.location.href='$url'";
 	echo "</script>";
