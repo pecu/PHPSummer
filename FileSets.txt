@@ -1,0 +1,74 @@
+FileSets
+
+1. 網站名稱: php課程二手拍賣網
+
+2. 網站項目:
+   a. 帳號登入 (公司內部管理使用) a_AdminUser.php
+   b. 新增/刪除/修改商品 b_Products.php
+   c. 新增/刪除/修改客戶 c_Users.php
+   d. 新增/刪除/修改訂單 d_Order.php
+   e. 新增/刪除/修改廠商 e_Store.php
+   f. 列出暢銷商品 f_ProductOne.php
+   g. 列出每月營收 g_Money.php
+   
+3. 表格設計
+   a. 帳號登入
+      AdminUser( No, Name, PassWord, Pri )
+   b. 商品
+	  CREATE TABLE Products (No INT, Name char(20), Price INT, Quility INT, StoreNo INT)
+      Products( No, Name, Price, Quility, StoreNo )
+   c. 客戶
+      CREATE TABLE Users(No INT, Name char(10), PassWord char(10), Tel char(20), Bir char(10), Address char(50), Email char(20))
+	  ALTERTABLE`users`ADDPRIMARYKEY (`No`) 	  
+	  ALTERTABLE`users`CHANGE`No``No` INT( 11)NOTNULLAUTO_INCREMENT 	  
+   d. 訂單
+      CREATE TABLE Ordered(No INT, Oyear INT, Omonth INT, Oday INT, Pno INT, Uno INT)
+   e. 廠商
+      CREATE TABLE Store(No INT, Name char(20), Tel char(10), Address char(50), Email char(20), userName char(10))
+	  
+4. SQL
+   新增
+   a_AdminUser.php
+   INSERT INTO AdminUser( Name, PassWord, Pri ) VALUES ('NONE', '12345', 0)
+   b_Products.php
+   INSERT INTO Products( Name, Price, Quility, StoreNo ) VALUES ('NONE', 10, 5, 1)
+   c_Users.php   
+   INSERT INTO Users( Name, PassWord, Tel, Bir, Address, Email ) VALUES ('NONE', '10', '500000', '12345', 'sdfsg', 'sdfsg' )   
+   d_Order.php
+   
+   e_Store.php
+   
+   刪除
+   a_AdminUser.php
+   
+   b_Products.php
+   DELETE FROM Products WHERE No = 2 
+
+   c_Users.php   
+   
+   d_Order.php
+   
+   e_Store.php
+   
+   修改
+   a_AdminUser.php
+
+   b_Products.php
+   
+   c_Users.php
+   UPDATE Users SET PassWord = "abcde" WHERE No = 3
+   d_Order.php
+   
+   e_Store.php
+   
+   列出
+   a_AdminUser.php
+   
+   b_Products.php
+
+   c_Users.php
+
+   d_Order.php
+   
+   e_Store.php
+   

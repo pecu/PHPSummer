@@ -1,0 +1,26 @@
+每月營收 g_Money.php
+
+content.php / ( menu.php + menulist.php ) / submenu.php
+	登入登出( index.php + WebNo = 0 login.php + login-check.php ) index.php?WebNo=0 帳號登入畫面
+	帳號管理( a_AdminUser.php + WebNo = 1 ) a_AdminUser.php?WebNo=1 
+		( smf1.php + smfList.php )
+		新增帳號 SubWebNo = 0 ( f1-0.php + f1-0-in.php )
+		列出帳號 SubWebNo = 3 ( f1.php )
+	商品管理( b_Products.php + WebNo = 2 f2.php ) b_Products.php?WebNo=2 預設列出
+		( smf2.php + smfList.php )
+		新增商品 SubWebNo = 0 ( f2-0.php + f2-0-sel.php + f2-0-in.php )
+		列出商品 SubWebNo = 3 ( f2.php )
+	客戶管理( c_Users.php + WebNo = 3 f3.php ) c_Users.php?WebNo=3 預設列出
+		( smf3.php + smfList.php )
+		新增客戶 SubWebNo = 0 ( f3-0.php + f3-0-in.php )
+		列出客戶 SubWebNo = 3 ( f3.php )
+	訂單管理( d_Order.php + WebNo = 4 f4.php ) d_Order.php?WebNo=4 預設列出
+		( smf4.php + smfList.php )
+		新增訂單 SubWebNo = 0 ( f4-0.php + f4-0-in.php )
+		列出訂單 SubWebNo = 3 ( f4.php )
+	廠商管理( e_Store.php + WebNo = 5 f5.php ) e_Store.php?WebNo=5 預設列出
+		( smf5.php + smfList.php )
+		新增訂單 SubWebNo = 0 ( f5-0.php + f5-0-in.php )
+		列出訂單 SubWebNo = 3 ( f5.php )
+	暢銷商品( f_ProductOne.php + WebNo = 6 f6.php ) f_ProductOne.php?WebNo=6
+	每月營收( g_Money.php + WebNo = 7 f7.php ) g_Money.php?WebNo=7
